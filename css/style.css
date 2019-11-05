@@ -1,0 +1,48 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.black{
+  background-color: black;
+  color: #D5D5D5;
+}
+.white{
+  background-color: white;
+  }
+.menu{
+  text-align: center;
+}
+.menu ul{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 30px;
+  color: #9A9A9A;
+}
+
+
+{
+  padding: 1em;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  grid-auto-flow: minmax(100px, auto);
+
+  grid-gap: 0.5em;
+  justify-items: stretch;
+  align-items: start;
+
+}
+.box1{
+  align-self:flex-start;
+}
+.wrapper div{
+  padding: 1em;
+  background-color: #eb7181;
+}
+.wrapper div.light {
+  padding: 1em;
+  background-color: #ecc6cb;
+}
