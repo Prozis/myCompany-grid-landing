@@ -2,9 +2,64 @@ body{
   padding: 0px;
   margin: 0px;
 }
+.logo1{
+  padding-left: 180px;
+  text-transform: uppercase;
+}
+/* оформление меню сайта */
+.menu-main {
+  color: white;
+  list-style: none;
+  padding: 5px 0 5px;
+  text-align: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0 20px 0 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #FFAE39;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #FFAE39;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
 .black{
   background-color: black;
   color: #D5D5D5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-text{
+  height: 700px;
+text-align: center;
+  grid-column: 1/3;
 }
 .white{
   background-color: white;
