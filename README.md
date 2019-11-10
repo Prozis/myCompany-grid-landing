@@ -1,3 +1,3 @@
 # myCompany-grid-landing
-test landing page
+Верстка лэндинга из макета psd с использованием Grid CSS
 11.2019
